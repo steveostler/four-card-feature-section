@@ -1,0 +1,123 @@
+:root {
+    --primary-red: hsl(0, 78%, 62%);
+    --primary-cyan: hsl(180, 62%, 55%);
+    --primary-orange: hsl(34, 97%, 64%);
+    --primary-blue: hsl(212, 86%, 64%);
+
+    --neutral-very-dark-blue: hsl(234, 12%, 34%);
+    --neutral-grayish-blue: hsl(229, 6%, 66%);
+    --neutral-very-light-gray: hsl(0, 0%, 98%);
+
+}
+
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size:15px;
+    background-color: var(--neutral-very-light-gray);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 5rem 1rem;
+}
+
+p{
+    color:var(--neutral-grayish-blue);
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+header p{
+    text-align: center; 
+    max-width: 300px;
+    margin:2rem auto;
+}
+header h1{ 
+    color:var(--neutral-grayish-blue);
+    font-weight: normal;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.5rem;
+    
+}
+
+header h1 span{
+    color:var(--neutral-very-dark-blue);
+    font-weight: 600;
+    display: block;
+}
+
+.card{
+    height: 222px;
+    width: 311px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%) ;
+    margin:25px 0; 
+    padding:1.5rem; 
+ 
+
+}
+.box1{
+    border-top: 4px solid var(--primary-cyan);
+}
+ 
+.box2{
+    border-top: 4px solid var(--primary-red);
+}
+
+.box3{
+    border-top: 4px solid var(--primary-orange);
+}
+
+.box4{
+    border-top: 4px solid var(--primary-blue);
+}
+
+.card h3{
+    margin-bottom: 0.75rem;
+}
+
+.card p{
+    margin-bottom: 1rem;
+}
+.card img{
+    display: block;
+    margin-left: auto;
+}
+
+@media(min-width:768px){
+    header p{
+        max-width: 540px;
+    }
+    header h1{
+        font-size: 2.25rem;
+    }
+
+    main{
+       display: flex;
+       gap:1.5rem;
+       align-items: center;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
